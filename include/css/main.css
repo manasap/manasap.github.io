@@ -325,6 +325,9 @@ h3.spec {
 	text-align: center;
 	text-shadow: none;	
 }
+#home-slider #slidedescription {
+	color:#FFFFFF;
+}
 
 #home-slider .slide-content {
 	font-size: 60px;
