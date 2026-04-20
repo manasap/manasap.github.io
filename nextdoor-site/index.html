@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Next Door Decors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a href="#top" class="logo">
+        <span class="logo-mark">NDD</span>
+        <span class="logo-text">Next Door Decors</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <div class="nav-links">
+        <a href="#about">Who We Are</a>
+        <a href="#services">Services</a>
+        <a href="#collections">Collections</a>
+        <a href="#catalog">Catalog</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">Serving Northern Virginia</p>
+        <h1>Event decor rooted in culture, styled with warmth.</h1>
+        <p class="hero-text">
+          From Indian heritage-inspired setups to modern western celebrations, Next Door Decors creates custom event styling, rentals, grab-and-go decor, and thoughtful finishing details.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#catalog">Explore the catalog</a>
+          <a class="btn btn-secondary" href="#contact">Book your event</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-badge">Custom setups</div>
+        <ul>
+          <li>Pooja, Mehendi, Haldi & Sangeeth decor</li>
+          <li>Birthdays, bridal showers & baby showers</li>
+          <li>Corporate events, proposals & milestone celebrations</li>
+          <li>Gift packages, add-ons and rentals</li>
+        </ul>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section intro" id="about">
+      <div class="container section-grid">
+        <div>
+          <p class="eyebrow">Who we are</p>
+          <h2>Decor with a personal, celebratory touch.</h2>
+        </div>
+        <div>
+          <p>
+            Next Door Decors is a Northern Virginia-based decor team focused on helping clients celebrate life’s special moments with custom setups, gifts, and event styling.
+          </p>
+          <p>
+            The brand language across the brochures blends earthy greens, creams, browns, and soft neutrals, so this website direction uses that same calm, elevated palette for a simple static launch.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <p class="eyebrow">Services</p>
+        <h2>What we offer</h2>
+        <div class="cards three-up">
+          <article class="card">
+            <h3>Custom Event Decor</h3>
+            <p>Styled setups for pooja events, mehendi, haldi, sangeeth, birthdays, bridal showers, baby showers, proposals, graduations, and more.</p>
+          </article>
+          <article class="card">
+            <h3>Rentals & Grab-and-Go</h3>
+            <p>Rentals include carts, favor walls, and grab-and-go decor packages for smaller celebrations and flexible budgets.</p>
+          </article>
+          <article class="card">
+            <h3>Gift Packages & Add-Ons</h3>
+            <p>Gift displays, flower boxes, flower frames, custom signs, floral arrangements, and cutouts to complete the event story.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section accent-section" id="collections">
+      <div class="container">
+        <p class="eyebrow">Collections</p>
+        <h2>Two design worlds, one cohesive brand.</h2>
+        <div class="cards two-up">
+          <article class="card feature-card">
+            <span class="tag">Indian heritage</span>
+            <h3>Traditional, spiritual, and culturally rich</h3>
+            <p>
+              This collection includes Pooja, Dasavataram, Temple, Kalamkari, Mehendi, Regal Peacock Splendor, Blush Rattan Charm, Bougainvillea Bliss, Haldi Arch Radiance, and Royal Drapes.
+            </p>
+          </article>
+          <article class="card feature-card">
+            <span class="tag">Western & modern</span>
+            <h3>Elegant, playful, and celebration-forward</h3>
+            <p>
+              This collection includes Tropical Paradise, Santorini Dreams, Chanel-inspired decor, Graduation Glory, CoComelon Celebration, and Enchanted Disney Celebration.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="catalog">
+      <div class="container">
+        <div class="catalog-heading">
+          <div>
+            <p class="eyebrow">Catalog</p>
+            <h2>Featured products and packages</h2>
+          </div>
+          <div class="catalog-controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="heritage">Indian Heritage</button>
+            <button class="filter-btn" data-filter="western">Western</button>
+            <button class="filter-btn" data-filter="addons">Gift Packages & Add-ons</button>
+          </div>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card" data-category="heritage">
+            <span class="product-type">Indian Heritage</span>
+            <h3>Dasavataram Divine Decor</h3>
+            <p>Spiritual storytelling setup inspired by Matsya to Kalki, ideal for pooja and cultural celebrations.</p>
+            <p class="price">From $1000</p>
+          </article>
+          <article class="product-card" data-category="heritage">
+            <span class="product-type">Indian Heritage</span>
+            <h3>Sacred Temple Harmony</h3>
+            <p>Temple-inspired backdrop with kolam detailing, floral accents, and a serene traditional presence.</p>
+            <p class="price">From $1000</p>
+          </article>
+          <article class="product-card" data-category="heritage">
+            <span class="product-type">Indian Heritage</span>
+            <h3>Earthy Kalamkari Grace</h3>
+            <p>Brown and cream heritage styling with hand-drawn motif influence and warm rustic elegance.</p>
+            <p class="price">From $1000</p>
+          </article>
+          <article class="product-card" data-category="heritage">
+            <span class="product-type">Indian Heritage</span>
+            <h3>Regal Peacock Splendor</h3>
+            <p>Peacock-inspired mehendi decor with rich colors and artistic detailing for a regal event backdrop.</p>
+            <p class="price">From $1000</p>
+          </article>
+          <article class="product-card" data-category="heritage">
+            <span class="product-type">Indian Heritage</span>
+            <h3>Blush Rattan Charm</h3>
+            <p>Blush tones, woven textures, and soft organic styling for a graceful mehendi celebration.</p>
+            <p class="price">From $1000</p>
+          </article>
+          <article class="product-card" data-category="heritage">
+            <span class="product-type">Indian Heritage</span>
+            <h3>Bougainvillea Bliss</h3>
+            <p>Pink and orange floral energy with a sun-kissed, garden-like atmosphere.</p>
+            <p class="price">From $1000</p>
+          </article>
+          <article class="product-card" data-category="heritage">
+            <span class="product-type">Indian Heritage</span>
+            <h3>Haldi Arch Radiance</h3>
+            <p>White and yellow half-arch decor designed around fresh florals and cheerful haldi warmth.</p>
+            <p class="price">From $1000</p>
+          </article>
+          <article class="product-card" data-category="heritage">
+            <span class="product-type">Indian Heritage</span>
+            <h3>Royal Drapes Decor</h3>
+            <p>Luxurious draped styling with candles and table setup options for sangeeths and intimate ceremonies.</p>
+            <p class="price">From $1500</p>
+          </article>
+
+          <article class="product-card" data-category="western">
+            <span class="product-type">Western</span>
+            <h3>Tropical Paradise</h3>
+            <p>Island-inspired tropical styling with greens, tiki details, fruit displays, and bar setup options.</p>
+            <p class="price">From $2000</p>
+          </article>
+          <article class="product-card" data-category="western">
+            <span class="product-type">Western</span>
+            <h3>Santorini Dreams Decor</h3>
+            <p>Blue-and-white coastal styling with elegant Mediterranean-inspired display elements.</p>
+            <p class="price">From $3000</p>
+          </article>
+          <article class="product-card" data-category="western">
+            <span class="product-type">Western</span>
+            <h3>Chanel-Inspired Decor</h3>
+            <p>Classic black-and-white luxury styling with chic gold accents for showers and milestone events.</p>
+            <p class="price">From $1500</p>
+          </article>
+          <article class="product-card" data-category="western">
+            <span class="product-type">Western</span>
+            <h3>Graduation Glory Decor</h3>
+            <p>Personalized celebration styling with school colors, display walls, and milestone-focused details.</p>
+            <p class="price">From $1500</p>
+          </article>
+          <article class="product-card" data-category="western">
+            <span class="product-type">Western</span>
+            <h3>CoComelon Celebration</h3>
+            <p>Colorful toddler party setup with playful display elements and cheerful character styling.</p>
+            <p class="price">From $2000</p>
+          </article>
+          <article class="product-card" data-category="western">
+            <span class="product-type">Western</span>
+            <h3>Enchanted Disney Celebration</h3>
+            <p>Whimsical princess-inspired setup for themed kids’ parties and family celebrations.</p>
+            <p class="price">From $2500</p>
+          </article>
+
+          <article class="product-card" data-category="addons">
+            <span class="product-type">Grab-and-Go</span>
+            <h3>Kolam Package</h3>
+            <p>Three foam boards, hanging flowers, backdrop cloth, banana leaf plants, floor mat, and garlands.</p>
+            <p class="price">$450</p>
+          </article>
+          <article class="product-card" data-category="addons">
+            <span class="product-type">Grab-and-Go</span>
+            <h3>Dasavataram Package</h3>
+            <p>Backdrop cloth, hanging flowers, banana leaf plants, floor mat, garlands, flower panels, and themed frames.</p>
+            <p class="price">$600</p>
+          </article>
+          <article class="product-card" data-category="addons">
+            <span class="product-type">Gift Packages</span>
+            <h3>Single Tier Display</h3>
+            <p>One handcrafted wooden tray with custom message decals and personalized name styling.</p>
+            <p class="price">$100</p>
+          </article>
+          <article class="product-card" data-category="addons">
+            <span class="product-type">Gift Packages</span>
+            <h3>Multi Tier Display</h3>
+            <p>Two handcrafted trays with balloon accents, fabric lining, florals, and personalized messaging.</p>
+            <p class="price">$275</p>
+          </article>
+          <article class="product-card" data-category="addons">
+            <span class="product-type">Add-On</span>
+            <h3>Flower Box Combo</h3>
+            <p>Flower box, tripod stand, two custom elements, and a custom message on the box.</p>
+            <p class="price">$150</p>
+          </article>
+          <article class="product-card" data-category="addons">
+            <span class="product-type">Add-On</span>
+            <h3>Flower Frame</h3>
+            <p>Framed floral arrangement with custom messaging for personal celebrations.</p>
+            <p class="price">$100</p>
+          </article>
+          <article class="product-card" data-category="addons">
+            <span class="product-type">Add-On</span>
+            <h3>Custom Sign / Cutouts / Florals</h3>
+            <p>Foam board signage, handmade cutouts, and floral arrangements for event personalization.</p>
+            <p class="price">From $100</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section accent-section" id="process">
+      <div class="container">
+        <p class="eyebrow">Our process</p>
+        <h2>Simple booking flow</h2>
+        <div class="timeline">
+          <div class="timeline-item"><span>1</span><div><h3>Initial phone call</h3><p>Discuss event requirements, vision, and details.</p></div></div>
+          <div class="timeline-item"><span>2</span><div><h3>Rough quote & proposal</h3><p>Receive inspiration ideas, decor direction, and a preliminary quote.</p></div></div>
+          <div class="timeline-item"><span>3</span><div><h3>Revisions</h3><p>Refine the concept until the final design and pricing are aligned.</p></div></div>
+          <div class="timeline-item"><span>4</span><div><h3>Reservation & deposit</h3><p>Secure the booking with a 50% deposit through the online portal, card, or Zelle.</p></div></div>
+          <div class="timeline-item"><span>5</span><div><h3>Event day setup</h3><p>The team handles setup and teardown on the event day.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-block">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Ready to start planning?</h2>
+          <p>For the initial static version, keep booking simple: direct message, Instagram inquiry, or a basic contact CTA that can later connect to a form tool.</p>
+        </div>
+        <div class="contact-card">
+          <p><strong>Suggested CTA:</strong> Tell us your event type, date, location, and inspiration.</p>
+          <a class="btn btn-primary full" href="mailto:hello@nextdoordecors.com">Email Next Door Decors</a>
+          <a class="btn btn-secondary full" href="https://instagram.com/nextdoordecors" target="_blank" rel="noreferrer">Message on Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Next Door Decors</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
