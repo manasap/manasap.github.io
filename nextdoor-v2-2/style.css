@@ -287,15 +287,32 @@ h3 { font-size: 1.7rem; }
   max-width: 26rem;
 }
 
-.cards.three-up {
+.services-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
 
+.services-grid-text {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .service-card {
-  border-radius: var(--radius);
-  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+}
+
+.service-card-text {
+  min-height: 172px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.service-copy {
+  padding: 1.35rem 1.35rem 1.45rem;
+}
+
+.service-copy h3 {
+  font-size: 1.45rem;
 }
 
 .service-index {
@@ -308,7 +325,7 @@ h3 { font-size: 1.7rem; }
   background: var(--chip);
   color: var(--accent);
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.9rem;
 }
 
 .catalogs-section {
@@ -433,7 +450,7 @@ h3 { font-size: 1.7rem; }
   .process-shell,
   .footer-shell,
   .section-head,
-  .cards.three-up,
+  .services-grid,
   .catalog-preview-grid,
   .unified-gallery-grid {
     grid-template-columns: 1fr;
