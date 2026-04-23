@@ -647,7 +647,7 @@ h3 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   .logo img {
     height: 80px; /* adjust as needed */
   }
