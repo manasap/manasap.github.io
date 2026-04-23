@@ -646,3 +646,9 @@ h3 {
     bottom: 0.8rem;
   }
 }
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 80px; /* adjust as needed */
+  }
+}
