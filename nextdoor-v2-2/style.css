@@ -302,7 +302,7 @@ h3 {
 
 .hero-carousel-track {
   position: relative;
-  min-height: clamp(260px, 42vw, 520px);
+  min-height: clamp(320px, 55vw, 650px);
 }
 
 .hero-slide {
