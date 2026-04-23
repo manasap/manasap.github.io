@@ -57,8 +57,60 @@
           </div>
         </div>
 
-        <figure class="hero-banner-card">
-          <img src="images/hero-pooja.png" alt="Pooja backdrop decor setup" />
+        <figure
+          class="hero-banner-card hero-carousel"
+          aria-label="Featured decor carousel"
+        >
+          <div class="hero-carousel-track">
+            <div class="hero-slide">
+              <img src="images/gift-tray.png" alt="Gift tray arrangement" />
+            </div>
+            <div class="hero-slide">
+              <img src="images/hero-pooja.png" alt="Traditional decor setup" />
+            </div>
+            <div class="hero-slide active">
+              <img src="images/frozen.png" alt="Decor cart setup" />
+            </div>
+            <div class="hero-slide">
+              <img
+                src="images/santorini-window.png"
+                alt="Gift tray arrangement"
+              />
+            </div>
+          </div>
+
+          <button
+            class="hero-carousel-btn prev"
+            type="button"
+            aria-label="Previous slide"
+          >
+            &#10094;
+          </button>
+          <button
+            class="hero-carousel-btn next"
+            type="button"
+            aria-label="Next slide"
+          >
+            &#10095;
+          </button>
+
+          <div class="hero-carousel-dots" aria-label="Carousel navigation">
+            <button
+              class="hero-dot active"
+              type="button"
+              aria-label="Go to slide 1"
+            ></button>
+            <button
+              class="hero-dot"
+              type="button"
+              aria-label="Go to slide 2"
+            ></button>
+            <button
+              class="hero-dot"
+              type="button"
+              aria-label="Go to slide 3"
+            ></button>
+          </div>
         </figure>
       </section>
     </header>

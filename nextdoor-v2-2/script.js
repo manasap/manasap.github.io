@@ -23,3 +23,49 @@ paletteButtons.forEach((button) => {
     button.classList.add('active');
   });
 });
+
+
+const heroCarousel = document.querySelector('.hero-carousel');
+
+if (heroCarousel) {
+  const slides = Array.from(heroCarousel.querySelectorAll('.hero-slide'));
+  const dots = Array.from(heroCarousel.querySelectorAll('.hero-dot'));
+  const prevBtn = heroCarousel.querySelector('.hero-carousel-btn.prev');
+  const nextBtn = heroCarousel.querySelector('.hero-carousel-btn.next');
+  let currentIndex = 0;
+  let autoRotate;
+
+  const showSlide = (index) => {
+    currentIndex = (index + slides.length) % slides.length;
+    slides.forEach((slide, i) => slide.classList.toggle('active', i === currentIndex));
+    dots.forEach((dot, i) => dot.classList.toggle('active', i === currentIndex));
+  };
+
+  const startAutoRotate = () => {
+    clearInterval(autoRotate);
+    autoRotate = setInterval(() => showSlide(currentIndex + 1), 3000);
+  };
+
+  prevBtn?.addEventListener('click', () => {
+    showSlide(currentIndex - 1);
+    startAutoRotate();
+  });
+
+  nextBtn?.addEventListener('click', () => {
+    showSlide(currentIndex + 1);
+    startAutoRotate();
+  });
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      showSlide(index);
+      startAutoRotate();
+    });
+  });
+
+  heroCarousel.addEventListener('mouseenter', () => clearInterval(autoRotate));
+  heroCarousel.addEventListener('mouseleave', startAutoRotate);
+
+  showSlide(0);
+  startAutoRotate();
+}
